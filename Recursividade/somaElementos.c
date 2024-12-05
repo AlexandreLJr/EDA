@@ -5,7 +5,7 @@ long int somavet(int *a, int qtde) {
         return 0;
     }
     // Caso recursivo: soma o último elemento com a soma do restante do vetor
-    return a[qtde - 1] + somavet(a, qtde - 1); 
+    return (a[qtde - 1] + somavet(a, qtde - 1))/2; 
 }
 
 int main() {
